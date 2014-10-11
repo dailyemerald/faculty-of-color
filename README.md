@@ -1,4 +1,0 @@
-innovation
-==========
-
-AAU averages 
