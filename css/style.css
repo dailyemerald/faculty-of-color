@@ -1,0 +1,41 @@
+body{
+	margin: 0px;
+}
+h1{
+	text-align: center;
+	font-family: times;
+}
+.text{
+	padding-left: 355px;
+	padding-right: 355px;
+	max-width: 900px;
+	position: relative;
+}
+aside{
+	float: right;
+	padding-right: 245px;
+}
+.slider {
+    position: relative;
+    overflow: hidden;
+    height: 150px;
+}
+.inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.logo {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+.logo:first-child {
+    display: block;
+}
+
+
+
+
+
