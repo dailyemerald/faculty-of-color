@@ -24,6 +24,7 @@ aside{
     width: 100%;
     height: 100%;
     position: relative;
+    padding-left: 40px;
 }
 .logo {
     width: 100%;
@@ -33,6 +34,12 @@ aside{
 }
 .logo:first-child {
     display: block;
+}
+.slide-btn{
+    border: none;
+    background-color: #FFFFFF;
+    padding-left: 40px;
+    outline: ;
 }
 
 

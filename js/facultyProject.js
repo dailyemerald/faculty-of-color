@@ -6,22 +6,16 @@ $('.logo').each(function () {
     var current = 0;
 
     function move(newIndex) {
-        var slideLeft, slideRight;
+        var slideLeft;
 
         if (newIndex > currentIndex) {
-
             slideLeft = '100%';
 
         } else {
             //do nothing
         }
 
-        if (newIndex < currentIndex) {
-            slideRight = '100%';
-        } else {
-            //do nothing
-        }
-        if (newIndex < ($logo.length - 1)) {
+        if (newIndex < ($logo.length - 1)) { //when gets to end goes back to beginning 
             move(currentIndex + 1);
         } else {
             move(0);
@@ -53,6 +47,5 @@ $('.logo').each(function () {
                 buttonArray.push($button);
             }
         });
-}
+    }
 });
-
