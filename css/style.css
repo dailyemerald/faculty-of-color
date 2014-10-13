@@ -11,14 +11,12 @@ h1{
 	max-width: 900px;
 	position: relative;
 }
-aside{
-	float: right;
-	padding-right: 245px;
-}
 .slider {
     position: relative;
     overflow: hidden;
     height: 150px;
+    max-width: 940px;
+    margin: 0px auto 30px auto;}
 }
 .inner {
     width: 100%;
@@ -40,6 +38,9 @@ aside{
     background-color: #FFFFFF;
     padding-left: 40px;
     outline: ;
+}
+.slide-button{
+    text-align: center;
 }
 
 
