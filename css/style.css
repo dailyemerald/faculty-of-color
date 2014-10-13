@@ -6,6 +6,7 @@ h1{
 	font-family: times;
 }
 .text{
+    margin: auto;
 	padding-left: 355px;
 	padding-right: 355px;
 	max-width: 900px;
@@ -41,6 +42,7 @@ h1{
 }
 .slide-button{
     text-align: center;
+    padding-bottom: 20px;
 }
 
 
