@@ -1,12 +1,13 @@
 $(document).ready(function () {
     $('.slider').each(function () {
-        // logos
+
         var $this = $(this); // current logo 
         var $cont = $this.find('.inner'); //inside of the carousel
-        var $logo = $this.find('.logo');
+        var $logo = $this.find('.logo'); // logos
         var buttonArray = []; // empty array to store buttons associated with logos
         var currentIndex = 0; // have the current logo be zero index
         var timeout;
+
 
         function move(newIndex) { // creates new index 
             var slideLeft, animateLeft; // declare the variable
@@ -26,6 +27,17 @@ $(document).ready(function () {
             } else { // if false
                 slideLeft = '-100%'; //sits the new logo to the left
                 animateLeft = '100%'; //animate the current group to the right 
+            }
+
+            function advance() {
+                clearTimeout(timeout);
+                timeout = setTimeout(function () {
+                    if (newIndex < ($logo.length - 1)) { // when @ end of index returns to beginning  
+                        move(currentIndex + 1);
+                    } else {
+                        move(0); // returns to original zero indexed 
+                    }
+                }, 4000);
             }
 
             $slides.eq(newIndex).css({
@@ -49,30 +61,16 @@ $(document).ready(function () {
             });
         }
 
-        function advance() {
-            clearTimeout(timeout);
-            timeout = setTimeout(function () {
-                if (newIndex < ($logo.length - 1)) { // when @ end of index returns to beginning  
-                    move(currentIndex + 1);
-                } else {
-                    move(0); // returns to original zero indexed 
-                }
-            }, 4000);
-        }
-
-    
-    $.each($logo, function (index) { // create button element for the button 
-        var $button = $('<button type="button" class="slide-btn">&bull;</button>');
-        if (index === currentIndex) { // if index is the current item add class active
-            $button.addClass('active');
-        }
-        $button.on('click', function () { // event handler for the button  
-            move(index);
-        }).appendTo('.slide-buttons');
-        buttonArray.push($button); // add it to button array       
+        $.each($logo, function (index) { // create button element for the button 
+            var $button = $('<button type="button" class="slide-btn">&bull;</button>');
+            if (index === currentIndex) { // if index is the current item add class active
+                $button.addClass('active');
+            }
+            $button.on('click', function () { // event handler for the button  
+                move(index);
+            }).appendTo('.slide-buttons');
+            buttonArray.push($button); // add it to button array     
+        });
+           advance();
     });
-    advance();
-
 });
-});
-

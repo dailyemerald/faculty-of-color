@@ -5,19 +5,32 @@ h1{
 	text-align: center;
 	font-family: times;
 }
+#vid{
+    float: right;
+    padding-right: 80px;
+}
+#peeps{
+    float: left;
+}
 .text{
     margin: auto;
-	padding-left: 355px;
-	padding-right: 355px;
+	padding-left: 300px;
+	padding-right: 300px;
 	max-width: 900px;
 	position: relative;
+    font-size: 18px;
+}
+#oregon-logo{
+    padding-right: 30px;
+    float: left;
 }
 .slider {
     position: relative;
     overflow: hidden;
-    height: 150px;
+    height: 130px;
     max-width: 940px;
-    margin: 0px auto 30px auto;}
+    margin: 0px auto 30px auto;
+    padding-top: 30px;
 }
 .inner {
     width: 100%;
