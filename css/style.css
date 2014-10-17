@@ -53,44 +53,8 @@ h1{
     font-family: times;
     line-height: 35px;
 }
-#oregon-logo{
-    padding-right: 30px;
-    float: left;
-}
-.slider {
-    position: relative;
-    overflow: hidden;
-    height: 130px;
-    max-width: 940px;
-    margin: 0px auto 30px auto;
-    padding-top: 30px;
-}
-.inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding-left: 40px;
-}
-.logo {
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    display: none;
-    position: absolute;
-}
-.logo:first-child {
-    display: block;
-}
-.slide-btn{
-    border: none;
-    background-color: #FFFFFF;
-    padding-left: 40px;
-    outline: ;
-}
-.slide-button{
-    text-align: center;
-    padding-bottom: 20px;
-}
+
+
 
 
 
