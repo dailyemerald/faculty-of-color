@@ -1,4 +1,3 @@
-
 	function winResized() {
 	var $image=$('#himage');
 	if ($image.size()) {
@@ -24,4 +23,5 @@ $(window).load(function() {
 }).bind('resize',function() {
 	winResized();
 });
+
 
