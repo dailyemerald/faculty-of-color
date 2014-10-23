@@ -41,9 +41,9 @@ h1{
 }
 .text{
     margin: auto;
-	padding-left: 300px;
-	padding-right: 300px;
-	max-width: 900px;
+    padding-left: 15%;
+    padding-right: 15%;
+    max-width: 900px;
     font-size: 18px;
     font-family: times;
     line-height: 35px;
