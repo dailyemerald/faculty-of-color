@@ -2,11 +2,6 @@ body{
 	margin: 0px;
     z-index: 0;
 }
-#himage{
-    z-index: 7;
-    max-width: 100%;
-    position: relative;
-}
 #banner{
     z-index: 3;
     width: 100%;
@@ -53,11 +48,6 @@ h1{
     font-family: times;
     line-height: 35px;
 }
-#vid{
-    position: absolute;
-    z-index: 9;
-    max-width: 100%; 
-}
 #overlay{
     position: absolute;
     z-index: 8;
@@ -76,9 +66,17 @@ h1{
     background-color: white;
     z-index: 10;
 }
-@media (max-device-width: 480px){
-    device-height: 100%;
-    device-width: 100%;
+#vid{
+    position: absolute;
+    z-index: 9;
+    max-width: 100%; 
+}
+#himage{
+    z-index: 7;
+    max-width: 100%;
+    position: relative;
+}
+@media (max-device-width: 480px;){
 }
 
 
