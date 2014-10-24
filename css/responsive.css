@@ -16,6 +16,9 @@
 	padding-bottom: 60%;
 	padding-top: 3%;
 }
-
+#graph{
+	overflow: hidden;
+	width: 100%;
+}
 
 
