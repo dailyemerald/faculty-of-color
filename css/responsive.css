@@ -1,4 +1,21 @@
-#banner{
-	display: none;
+.text{
+	padding-right: 0.25%;
+	padding-left: 0.25%;
+	color: red;
 }
+#pullQuote{
+	width: 20%;
+	font-size: 20px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+#overlay{
+	padding-bottom: 5%;
+}
+#covered{
+	padding-bottom: 60%;
+	padding-top: 3%;
+}
+
+
 
