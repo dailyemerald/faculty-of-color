@@ -7,15 +7,15 @@ body{
     width: 100%;
     background-color: black;
     position: fixed;
-    height: 40px;
-    padding-top: 15px;
+    height: 5%;
+    padding-top: 1%;
 }
 #banner a{
     color: white;
-    height: 40px;
+    height: 5%;
     position: fixed;
     text-decoration: none;
-    padding-left: 20px;
+    padding-left: 5%;
 }
 #heading{
     text-align: center;
@@ -29,10 +29,10 @@ h1{
 }
 #pullQuote{
     float: left;
-    padding-right: 10px;
+    padding-right: 5%;
     padding-left: 15%;
-    padding-top: 5%;
-    padding-bottom:5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
     font-size: 45px;
     height: 100px;
     width: 300px;
