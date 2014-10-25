@@ -75,6 +75,11 @@ h1{
     max-width: 100%;
     position: relative;
 }
+.twitter-share-button{
+    float: right;
+    padding-right: 3%;
+}
+
 
 
 
