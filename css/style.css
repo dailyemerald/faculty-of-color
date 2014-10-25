@@ -9,13 +9,14 @@ body{
     position: fixed;
     height: 5%;
     padding-top: 1%;
+    padding-left: 5%;
+
 }
 #banner a{
     color: white;
     height: 5%;
     position: fixed;
     text-decoration: none;
-    padding-left: 5%;
 }
 #heading{
     text-align: center;
@@ -77,7 +78,7 @@ h1{
 }
 .twitter-share-button{
     float: right;
-    padding-right: 3%;
+    padding-right: 7%;
 }
 
 
