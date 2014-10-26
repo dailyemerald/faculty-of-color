@@ -74,7 +74,7 @@ h1{
 #himage{
     z-index: 7;
     max-width: 100%;
-    position: relative;
+    position: relative; 
 }
 .twitter-share-button{
     float: right;
