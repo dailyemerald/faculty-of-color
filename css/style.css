@@ -71,10 +71,17 @@ h1{
     z-index: 9;
     max-width: 100%; 
 }
-#himage{
-    z-index: 7;
+#vidHead{
+    position: relative;
+    z-index: 9;
     max-width: 100%;
-    position: relative; 
+}
+#transparent{
+    padding-top: 30%;
+    z-index: 20;
+    opacity: 0.5;
+    width: 100%;
+    position: absolute;
 }
 .twitter-share-button{
     float: right;
