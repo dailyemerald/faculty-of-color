@@ -1,6 +1,10 @@
 #banner{
 	width: 100%;
 }
+.banner #share{
+    padding-left: 15%;
+    cursor: pointer;
+}
 .text{
 	padding-right: 10%;
 	padding-left: 10%;
