@@ -7,7 +7,7 @@ body {
     width: 100%;
     background-color: black;
     position: fixed;
-    height: 5.2%;
+    height: 4.8%;
     padding-top: 1%;
     padding-left: 5%;
     padding-bottom: 1%;
@@ -20,13 +20,13 @@ body {
     font-family:'exo-black', sans-serif;
 }
 .banner #twitter{
-    padding-left: 73%;
+    padding-left: 75%;
     cursor: pointer;
     position: absolute;
     padding-top: 0.5%;
 }
 .banner #fb{
-    padding-left: 68%;
+    padding-left: 70%;
     cursor: pointer;
     position: absolute;
     padding-bottom: 1.5%;
