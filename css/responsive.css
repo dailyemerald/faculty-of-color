@@ -1,9 +1,8 @@
-#banner{
+.banner{
 	width: 100%;
 }
-.banner #share{
-    padding-left: 5%;
-    cursor: pointer;
+.banner .share{
+    padding-left: 45%;
 }
 .text{
 	padding-right: 10%;
