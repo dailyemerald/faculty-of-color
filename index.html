@@ -3,6 +3,13 @@
     <meta name="viewport" content="width=device-width">
     <title>Faculty Diversity</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
+    <link rel="stylesheet" href="css/responsiveTab.css" media="screen and (max-width: 1200px)">
+    <script type="text/javascript" src="d3.min.js"></script>
+    <script type="text/javascript" src="
+      js/jQuery/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="
+      js/jquery-ui/jquery-ui.js"></script>
 </head>
 <body>
     <div class="banner"> <a target="blank" href="http://dailyemerald.com/" id="logo">THE EMERALD
@@ -30,7 +37,7 @@
          <div id="videoHolder">
         <div id="overlay"></div>
         <!-- end overlay -->
-        <video id="vid" controls preload="auto" poster="img/25duck.png">
+        <video class="video" id="vid" controls preload="auto">
             <source src="img/ducks.mov" height="500px" width="100%"></source>
         </video>
        </div> 
@@ -40,29 +47,70 @@
      <div id="covered">
         <div id="overlay"></div>
         <!-- end overlay -->
-        <video id="vid-2" controls preload="auto" poster="img/25duck.png">
+        <video class="video" id="vid-2" controls preload="auto" poster="img/25duck.png">
             <source src="img/ducks.mov" height="500px" width="100%"></source>
         </video>
     </div>
     <p class="text">macaroon. Danish caramels lemon drops bonbon tart chocolate. Cake sweet roll jelly beans gingerbread pudding cake. Jelly toffee chocolate unerdwear.com cheesecake danish donut liquorice sweet roll. Croissant halvah icing. Tiramisu chocolate candy wafer cheesecake cake danish chocolate powder halvah halvah. Marzipan cotton candy gummies candy canes muffin croissant brownie lollipop sesame snaps. Candy gingerbread liquorice gummi bears macaroon. Apple pie pie marshmallow caramels. Apple pie cupcake tiramisu liquorice sugar plum cotton candy halvah gingerbread muffin. Cupcake marshmallow ice cream icing toffee soufflé oat cake icing. chocolate powder halvah halvah. Marzipan cotton candy gummies candy canes muffin croissant brownie lollipop sesame snaps. Candy gingerbread liquorice gummi bears macaroon. Apple pie pie marshmallow caramels. Apple pie cupcake tiramisu liquorice sugar chocolate powder halvah halvah. Marzipan cotton candy gummies candy canes muffin croissant brownie lollipop sesame snaps. Candy gingerbread liquorice gummi bears macaroon. Apple pie pie marshmallow caramels. Apple pie cupcake tiramisu liquorice sugar</p>
-    <div id="graph">
-        <img src="img/BarGraph.png">
-    </div>
-     <div id="covered">
-        <div id="overlay"></div>
-        <!-- end overlay -->
-        <video id="vid-1" controls preload="auto" poster="img/25duck.png"> This video is not supported by your browser.
-            <source src="img/ducks.mov" height="500px" width="100%"></source>
-        </video>
-    </div>
-    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 900px)">
-    <link rel="stylesheet" href="css/responsiveTab.css" media="screen and (max-width: 1200px)">
-     <script type="text/javascript" src="
-      js/jQuery/jquery-2.1.1.js"></script>
-    <script type="text/javascript" src="
-      js/jquery-ui/jquery-ui.js"></script>
+
+    <script type="text/javascript">
+
+            var w = 700;
+            var h = 300;
+            var barPadding = 2;
+            
+              var dataset = [117, 138, 140, 141, 174, 176, 178, 186, 186, 188, 190, 195, 196, 197, 199, 200, 204, 205, 209, 211, 214, 220, 222, 224, 232, 234, 236, 242, 248, 257, 261, 268, 291];
+            
+            var svg = d3.select("body")
+                        .append("svg")
+                        .attr("width", w)
+                        .attr("height", h);
+
+            svg.selectAll("rect")
+               .data(dataset)
+               .enter()
+               .append("rect")
+               .attr("x", function(d, i) {
+                    return i * (w / dataset.length);
+               })
+               .attr("y", function(d) {
+                    return h - (d * 1);
+               })
+               .attr("width", w / dataset.length - barPadding)
+               .attr("height", function(d) {
+                    return d * 1;
+               })
+               .attr("fill", function(d) {
+                    return "rgb(173, 216, " + (d) + ")";
+                });
+
+            svg.selectAll("text")
+               .data(dataset)
+               .enter()
+               .append("text")  
+               .text(function(d) {
+                    return d;
+               })
+               .attr("x", function(d, i) {
+                    return i * (w / dataset.length) + 5;
+               })
+               .attr("y", function(d) {
+                    return h - (d * 1) + 15;
+               })
+                .attr("font-family", "sans-serif")
+                .attr("font-size", "11px")
+                .attr("fill", "white")
+                .attr("text-anchor", "middle")
+                .attr("x", function(d, i) {
+                     return i * (w / dataset.length) + (w / dataset.length - barPadding) / 2;
+                    })
+                .attr("y", function(d) {
+                     return h - (d) + 14;
+                     });
+            
+        </script>
+
       <script type="text/javascript" src="
       js/scroll.js"></script>
 </body>
-
 </html>
