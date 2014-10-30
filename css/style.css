@@ -3,7 +3,6 @@ body {
     z-index: 0;
 }
 .banner {
-    z-index: 3;
     width: 100%;
     background-color: black;
     position: fixed;
@@ -73,13 +72,12 @@ body {
 }
 #overlay {
     position: absolute;
-    z-index: 8;
-    padding-bottom: 10%;
+    padding-bottom: 1%;
 }
 #covered {
     position: relative;
     padding-top: 15px;
-    padding-bottom: 40%;
+    padding-bottom: 58%;
 }
 .video {
     position: absolute;

@@ -22,7 +22,7 @@ $(function () {
             $("#videoHolder").html(
                 '<video width="100%" autoplay controls>' +
 
-                '<source src="img/ducks.mov" height="500px" width="100%"></source>' +
+                '<source src="img/ducks.mov" width="100%"></source>' +
 
                 '</video>');
         } else if (scrollAmount >= "1800") {
