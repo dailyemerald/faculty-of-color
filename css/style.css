@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
 }
 #transparent {
-    padding-top: 30%;
+    padding-top: 5%;
     z-index: 20;
     opacity: 0.5;
     width: 100%;
@@ -54,7 +54,6 @@ body {
     padding-bottom: 1%;
     font-size: 30px;
     width: 200px;
-    margin: 0px;
     font-family: sans-serif;
     line-height: 140%;
 }
