@@ -78,8 +78,8 @@ body {
 }
 #covered {
     position: relative;
-    padding-bottom: 57%;
     padding-top: 15px;
+    padding-bottom: 40%;
 }
 .video {
     position: absolute;

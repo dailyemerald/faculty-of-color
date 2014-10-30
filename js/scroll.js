@@ -1,12 +1,34 @@
-$(window).scroll(function () {
+var navShow = $(window).scroll(function () {
 
-    var scrollAmount = $('body').scrollTop();
-    console.log(scrollAmount);
 
-    if (scrollAmount >= "1708" && scrollAmount <= "2400") {
-        document.getElementById("vid").setAttribute('autoplay', true);
+    var when = $(window).scrollTop();
+
+    if (when > 690) {
+        $(".banner").slideDown();
+    } else if (when < 780) {
+        $(".banner").slideUp();
     }
-    if (scrollAmount >= "3290" && scrollAmount <= "4010") {
-    	document.getElementById("vid-2").setAttribute('autoplay', true);
-    }
+    console.log(when);
+});
+
+$(function () {
+    $(window).scroll(function (e) {
+
+        var scrollAmount = $('body').scrollTop();
+        console.log(scrollAmount);
+
+        if (scrollAmount >= "1700" && scrollAmount <= "1701") {
+
+            $("#videoHolder").html(
+                '<video width="100%" autoplay controls>' +
+
+                '<source src="img/ducks.mov" height="500px" width="100%"></source>' +
+
+                '</video>');
+        } else if (scrollAmount >= "1800") {
+
+            $("#videoHolder").html(
+            document.getElementById('#videoHolder').attr('autoplay', false));
+        }
+    });
 });
