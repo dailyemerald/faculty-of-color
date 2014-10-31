@@ -17,14 +17,20 @@ $(function () {
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount == "1670" && scrollAmount <= "2367" ) {
+        if (scrollAmount == "1670") {
 
             $("#videoHolder").html(
-                '<video width="100%" autoplay controls>' +
+                '<video width="100%" autoplay controls style="z-index: 10;">' +
 
                 '<source src="img/ducks.mov" width="100%"></source>' +
 
                 '</video>'); 
+        } else if(scrollAmount > "1670") {
+        		'<video width="100%" mute controls>' +
+
+                '<source src="img/ducks.mov" width="100%"></source>' +
+
+                '</video>'; 
         }
     });
 });
@@ -34,14 +40,20 @@ $(function () {
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount == "" && scrollAmount <= "" ) {
+        if (scrollAmount == "3237") {
 
             $("#videoCont").html(
                 '<video width="100%" autoplay controls>' +
 
-                '<source src="img/ducks.mov" width="100%"></source>' +
+                '<source src="img/ducks.mov" style="z-index: 10;" width="100%"></source>' +
 
                 '</video>'); 
+        } else if(scrollAmount > "3237") {
+        		'<video width="100%" controls>' +
+
+                '<source src="img/ducks.mov" style="z-index: 10;" width="100%"></source>' +
+
+                '</video>'; 
         }
     });
 });
