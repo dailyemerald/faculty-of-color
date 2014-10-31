@@ -79,5 +79,13 @@ body {
 .video {
     position: relative;
     max-width: 100%;
-    z-index: 1000;
+    z-index: 10;
+}
+#bGraph{
+    width: 100%;
+    z-index: 29;
+}
+#bar{
+    position: absolute;
+    z-index: 30;
 }
