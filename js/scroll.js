@@ -12,23 +12,36 @@ var navShow = $(window).scroll(function () {
 });
 
 $(function () {
-    $(window).scroll(function (e) {
+    $(window).scroll(function () {
 
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount >= "1700" && scrollAmount <= "1701") {
+        if (scrollAmount == "1670" && scrollAmount <= "2367" ) {
 
             $("#videoHolder").html(
                 '<video width="100%" autoplay controls>' +
 
                 '<source src="img/ducks.mov" width="100%"></source>' +
 
-                '</video>');
-        } else if (scrollAmount >= "1800") {
+                '</video>'); 
+        }
+    });
+});
+$(function () {
+    $(window).scroll(function () {
 
-            $("#videoHolder").html(
-            document.getElementById('#videoHolder').attr('autoplay', false));
+        var scrollAmount = $('body').scrollTop();
+        console.log(scrollAmount);
+
+        if (scrollAmount == "" && scrollAmount <= "" ) {
+
+            $("#videoCont").html(
+                '<video width="100%" autoplay controls>' +
+
+                '<source src="img/ducks.mov" width="100%"></source>' +
+
+                '</video>'); 
         }
     });
 });
