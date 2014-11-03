@@ -10,6 +10,7 @@ body {
     padding-top: 1%;
     padding-left: 5%;
     padding-bottom: 1%;
+    z-index: 1000;
 }
 .banner #logo {
     color: white;
@@ -67,6 +68,7 @@ body {
     margin: auto;
     padding-left: 20%;
     padding-right: 20%;
+    position: relative;
     font-size: 19px;
     font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
     line-height: 35px;
@@ -79,13 +81,14 @@ body {
 .video {
     position: relative;
     max-width: 100%;
-    z-index: 10;
+}
+#afterGr{
+    padding-top: 40%;
 }
 #bGraph{
     width: 100%;
-    z-index: 29;
+    position: absolute;
 }
 #bar{
-    position: absolute;
-    z-index: 30;
+    z-index: 50;
 }
