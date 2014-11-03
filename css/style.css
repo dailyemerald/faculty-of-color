@@ -10,7 +10,6 @@ body {
     padding-top: 1%;
     padding-left: 5%;
     padding-bottom: 1%;
-    z-index: 1000;
 }
 .banner #logo {
     color: white;
@@ -24,7 +23,6 @@ body {
     position: fixed;
     margin-left: 75%;
     padding-top: 0.5%;
-    
 }
 .banner #fb{
     cursor: pointer;
@@ -32,9 +30,10 @@ body {
     margin-left: 70%;
     padding-bottom: 1.5%;
 }
-#head {
+#heading {
     text-align: center;
     margin: 0 auto;
+    z-index: 100;
 }
 #vid1{
     padding: 0;
@@ -82,13 +81,5 @@ body {
     position: relative;
     max-width: 100%;
 }
-#afterGr{
-    padding-top: 40%;
-}
-#bGraph{
-    width: 100%;
-    position: absolute;
-}
-#bar{
-    z-index: 50;
-}
+
+

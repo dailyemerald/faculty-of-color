@@ -3,7 +3,7 @@ var navShow = $(window).scroll(function () {
 
     var when = $(window).scrollTop();
 
-    if (when > 690) {
+    if (when > 700) {
         $(".banner").slideDown();
     } else if (when < 780) {
         $(".banner").slideUp();
@@ -17,10 +17,10 @@ $(function () {
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount == "1668" && scrollAmount<"1670") {
+        if (scrollAmount == "1647" && scrollAmount<"1652") {
 
             $("#videoHolder").html(
-                '<video width="100%" autoplay controls>' +
+                '<video width="100%" autoplay controls preload="auto">' +
 
                 '<source src="img/ducks.mov" width="100%"></source>' +
 
@@ -36,7 +36,7 @@ $(function () {
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount == "4088" && scrollAmount<"4090") {
+        if (scrollAmount == "3983" && scrollAmount<"3990") {
 
             $("#videoCont").html(
                 '<video width="100%" autoplay controls>' +
@@ -45,11 +45,7 @@ $(function () {
 
                 '</video>'); 
         } else if(scrollAmount > "4088") {
-        		'<video width="100%" controls>' +
-
-                '<source src="img/ducks.mov" style="z-index: 10;" width="100%"></source>' +
-
-                '</video>'; 
+        	$("videoCont").html('autoplay', false);
         }
     });
 });
