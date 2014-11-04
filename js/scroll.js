@@ -22,7 +22,7 @@ $(function () {
             $("#videoHolder").html(
                 '<video width="100%" autoplay controls preload="auto">' +
 
-                '<source src="img/Innovation-Lamina.mp4" width="100%"></source>' +
+                '<source src="img/" width="100%"></source>' +
 
                 '</video>'); 
         } else if(scrollAmount > "1668" || scrollAmount < "1668") {
@@ -41,7 +41,7 @@ $(function () {
             $("#videoCont").html(
                 '<video width="100%" autoplay controls>' +
 
-                '<source src="img/Innovation-Lamina.mp4" width="100%"></source>' +
+                '<source src="img/" width="100%"></source>' +
 
                 '</video>'); 
         } else if(scrollAmount > "4088") {
