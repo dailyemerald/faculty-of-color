@@ -72,14 +72,26 @@ body {
     font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
     line-height: 35px;
 }
+#first{
+    padding-top: 6%;
+}
 #covered {
     position: relative;
     padding-top: 15px;
     padding-bottom: 58%;
+    padding-top: 6%;
 }
 .video {
     position: relative;
     max-width: 100%;
+}
+#graph1{
+    padding-right: 35%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+#graph2{
+    z-index: 1002;
 }
 
 
