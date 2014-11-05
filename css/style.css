@@ -44,7 +44,7 @@ body {
     font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
     line-height: 35px;
 }
-.text a{
+.plink{
     color: black;
 }
 #videoHolder{
@@ -94,6 +94,11 @@ body {
 #byLine{
     font-size: 15px;
     color: #A0A0A0;
+}
+.twitHan{
+ color: #A0A0A0;
+ text-decoration: none;
+ cursor: pointer;   
 }
 
 
