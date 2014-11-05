@@ -23,15 +23,13 @@ body {
     width: 100%;
     cursor: pointer;
     position: absolute;
-    margin-left: 70%;
-    padding-top: 0.5%;
+    margin-left: 65%
 }
 .banner #fb{
     width: 100%;
     cursor: pointer;
     position: absolute;
-    margin-left: 65%;
-    padding-bottom: 1.5%;
+    margin-left: 70%;
 }
 @font-face {
     font-family:'exo-black';
