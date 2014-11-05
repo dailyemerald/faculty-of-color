@@ -3,9 +3,9 @@ var navShow = $(window).scroll(function () {
 
     var when = $(window).scrollTop();
 
-    if (when > 2100) {
+    if (when > 700) {
         $(".banner").slideDown();
-    } else if (when < 1405) {
+    } else if (when < 780) {
         $(".banner").slideUp();
     }
     console.log(when);
@@ -17,7 +17,7 @@ $(function () {
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount == "1462" && scrollAmount<"1471") {
+        if (scrollAmount == "1418" && scrollAmount<"1422") {
 
             $("#videoHolder").html(
                 '<video width="100%" autoplay controls preload="auto">' +
