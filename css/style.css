@@ -88,10 +88,12 @@ body {
     padding-left: 20%;
     padding-right: 20%;
     position: relative;
+    color: #A0A0A0;
     font-family:  'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 #byLine{
     font-size: 15px;
+    color: #A0A0A0;
 }
 
 
