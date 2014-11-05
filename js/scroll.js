@@ -3,9 +3,9 @@ var navShow = $(window).scroll(function () {
 
     var when = $(window).scrollTop();
 
-    if (when > 700) {
+    if (when > 2100) {
         $(".banner").slideDown();
-    } else if (when < 780) {
+    } else if (when < 1405) {
         $(".banner").slideUp();
     }
     console.log(when);
@@ -17,12 +17,12 @@ $(function () {
         var scrollAmount = $('body').scrollTop();
         console.log(scrollAmount);
 
-        if (scrollAmount == "1647" && scrollAmount<"1652") {
+        if (scrollAmount == "1462" && scrollAmount<"1471") {
 
             $("#videoHolder").html(
                 '<video width="100%" autoplay controls preload="auto">' +
 
-                '<source src="img/" width="100%"></source>' +
+                '<source src="img/InnovationLamina.mp4" width="100%"></source>' +
 
                 '</video>'); 
         } else if(scrollAmount > "1668" || scrollAmount < "1668") {

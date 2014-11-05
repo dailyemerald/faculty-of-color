@@ -84,6 +84,7 @@ body {
 .video {
     position: relative;
     max-width: 100%;
+    z-index: 1000;
 }
 #graph1{
     padding-right: 35%;
