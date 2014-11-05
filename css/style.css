@@ -10,6 +10,7 @@ body {
     padding-top: 1%;
     padding-left: 5%;
     padding-bottom: 1%;
+    z-index: 1000;
 }
 .banner #logo {
     color: white;
@@ -52,6 +53,10 @@ body {
     z-index: 1003;
     position: relative;
 }
+#videoCont{
+    z-index: 1003;
+    position: relative;
+}
 #pullQuote {
     float: left;
     padding-right: 3%;
@@ -59,7 +64,7 @@ body {
     padding-top: 2%;
     padding-bottom: 1%;
     font-size: 30px;
-    width: 200px;
+    width: 35%;
     font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
     line-height: 140%;
 }
@@ -70,6 +75,13 @@ body {
 #graph2{
     z-index: 1001;
     position: relative;
+}
+#graph3{
+    z-index: 1001;
+    position: relative;
+}
+span{
+    font-size: 16px;
 }
 
 
