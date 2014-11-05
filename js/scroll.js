@@ -11,3 +11,5 @@ var navShow = $(window).scroll(function () {
     console.log(when);
 });
 
+
+

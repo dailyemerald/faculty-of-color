@@ -78,8 +78,13 @@ body {
     z-index: 1001;
     position: relative;
 }
-span{
+#byline{
     font-size: 16px;
+}
+.capt{
+    font-size: 16px;
+    padding-left: 50%;
+    font-family:  'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 
