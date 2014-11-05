@@ -33,24 +33,9 @@ body {
     margin-left: 65%;
     padding-bottom: 1.5%;
 }
-#vid1{
-    padding: 0;
-    position: relative;
-}
 @font-face {
     font-family:'exo-black';
     src: url(../fonts/exo-black.otf);
-}
-#pullQuote {
-    float: left;
-    padding-right: 3%;
-    padding-left: 20%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    font-size: 30px;
-    width: 200px;
-    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-    line-height: 140%;
 }
 .text {
     margin: auto;
@@ -63,6 +48,25 @@ body {
 }
 .text a{
     color: black;
+}
+#pullQuote {
+    float: left;
+    padding-right: 3%;
+    padding-left: 20%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    font-size: 30px;
+    width: 200px;
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 140%;
+}
+#graph1{
+    z-index: 1001;
+    position: relative;
+}
+#graph2{
+    z-index: 1001;
+    position: relative;
 }
 
 
