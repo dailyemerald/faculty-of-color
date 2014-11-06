@@ -19,13 +19,13 @@ body {
     font-size: 20px;
     font-family:'exo-black', sans-serif;
 }
-.banner #twitter{
+.banner #twitter {
     width: 100%;
     cursor: pointer;
     position: absolute;
     margin-left: 65%
 }
-.banner #fb{
+.banner #fb {
     width: 100%;
     cursor: pointer;
     position: absolute;
@@ -41,17 +41,17 @@ body {
     padding-right: 20%;
     position: relative;
     font-size: 19px;
-    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family:'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
     line-height: 35px;
 }
-.plink{
+.plink {
     color: black;
 }
-#videoHolder{
+#videoHolder {
     z-index: 1003;
     position: relative;
 }
-#videoCont{
+#videoCont {
     z-index: 1003;
     position: relative;
 }
@@ -64,44 +64,39 @@ body {
     font-size: 30px;
     width: 35%;
     position: relative;
-    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family:'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
     line-height: 140%;
 }
-#graph1{
+#graph1 {
     z-index: 1001;
     position: relative;
 }
-#graph2{
+#graph2 {
     z-index: 1001;
     position: relative;
 }
-#graph3{
+#graph3 {
     z-index: 1001;
     position: relative;
 }
-#byline{
+#byline {
     font-size: 16px;
 }
-.capt{
+.capt {
     margin: auto;
     font-size: 14px;
     padding-left: 20%;
     padding-right: 20%;
     position: relative;
     color: #A0A0A0;
-    font-family:  'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-family:'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
 }
-#byLine{
+#byLine {
     font-size: 15px;
     color: #A0A0A0;
 }
-.twitHan{
- color: #A0A0A0;
- text-decoration: none;
- cursor: pointer;   
+.twitHan {
+    color: #A0A0A0;
+    text-decoration: none;
+    cursor: pointer;
 }
-
-
-
-
-
